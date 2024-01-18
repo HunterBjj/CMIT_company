@@ -7,12 +7,14 @@
 
 def find_max(words):
     len_max = 0
+    max_word = []
     for word in words:
         len_word = len(word)
         if len_word > len_max:
             len_max = len_word
+            max_word = word
 
-    return len_max
+    return max_word
 
 
 words = input().split()
